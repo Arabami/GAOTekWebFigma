@@ -316,7 +316,7 @@ background: linear-gradient(to right, rgba(25, 0, 60, 0.7), rgba(25, 0, 60, 0.3)
 .features-left img {
   max-width: 600px;
   object-fit: contain;
-  transform: translateX(-100px); /* tinggal ubah -30px sesuai keinginanmu */
+  transform: translateX(-100px);
 }
 
 .features-container {
@@ -336,7 +336,7 @@ background: linear-gradient(to right, rgba(25, 0, 60, 0.7), rgba(25, 0, 60, 0.3)
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(20px); /* efek turun sedikit */
+  transform: translateY(20px); 
 }
 
 
@@ -358,7 +358,7 @@ background: linear-gradient(to right, rgba(25, 0, 60, 0.7), rgba(25, 0, 60, 0.3)
   justify-content: flex-start;
   align-items: flex-start;
   gap: 60px;
-  margin-top: 25px; /* lebih mirip contoh */}
+  margin-top: 25px;}
 
 .icon {
   font-size: 2.2rem;
@@ -418,6 +418,47 @@ background: linear-gradient(to right, rgba(25, 0, 60, 0.7), rgba(25, 0, 60, 0.3)
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .features-section {
+    height: auto;
+    padding: 80px 0;
+  }
+
+
+  .features-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .features-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .features-left img {
+    transform: none !important;   
+    margin: 0 auto !important;    
+    width: 85%;
+    max-width: 420px;
+  }
+
+  
+  .features {
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .features-dots {
+    display: none;
+  }
+}
+
 
 /* ============ FORM SECTION ============ */
 .form {
@@ -1144,7 +1185,7 @@ form p {
   width: 100%;
   padding: 15px 20px;
   border: 1.5px solid #ddd;
-  border-radius: 25px; /* agar bulat seperti contoh */
+  border-radius: 25px; 
   font-size: 1rem;
   background: #f9f9f9;
   transition: all 0.3s ease;
@@ -1157,7 +1198,7 @@ form p {
 }
 
 .budget-field {
-  max-width: 300px; /* bisa disesuaikan, contoh 300px */
+  max-width: 300px; 
 }
 
 /* Hover/focus efek */
