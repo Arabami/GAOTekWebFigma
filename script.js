@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 const texts = [
-  "Forget About Code",
-  "Design Without Limits",
-  "Build Faster Than Ever",
-  "Launch Beautifully",
-  "Create Freely"
+  "Keysia",
+  "Alieviara",
+  "Farach",
+  "Habibah",
+  "22-02-2025"
 ];
 
 let index = 0;
@@ -103,4 +103,8 @@ updateDots();
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
   });
+});
+
+document.getElementById("confessBtn").addEventListener("click", function () {
+  alert("I really like you. And I mean it, wanna be mine forever??");
 });
